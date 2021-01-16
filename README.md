@@ -1,4 +1,4 @@
-# GFTE
+# GFTE - Credit to Yiren Li, et. al. for this code
 ## Introduction
 A GCN-based table structure recognition method, which integrates position feature, text feature and image feature together.
 ## Implementation Details
