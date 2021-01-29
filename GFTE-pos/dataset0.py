@@ -105,9 +105,9 @@ class ScitsrDataset(Dataset):
     
     def readlabel(self,idx):
         imgfn = self.imglist[idx]
-        structfn = os.path.join(self.root_path,"structure",os.path.splitext(os.path.basename(imgfn))[0] +".json")
-        chunkfn = os.path.join(self.root_path,"chunk",os.path.splitext(os.path.basename(imgfn))[0]+".chunk")
-        relfn = os.path.join(self.root_path,"rel",os.path.splitext(os.path.basename(imgfn))[0]+".rel")
+        structfn = os.path.join(self.root_path,"/content/scitsr_data/train/structure",os.path.splitext(os.path.basename(imgfn))[0] +".json")
+        chunkfn = os.path.join(self.root_path,"/content/scitsr_data/train/chunk",os.path.splitext(os.path.basename(imgfn))[0]+".chunk")
+        relfn = os.path.join(self.root_path,"/content/scitsr_data/train/rel",os.path.splitext(os.path.basename(imgfn))[0]+".rel")
         #print("***",chunkfn)
         if not os.path.exists(structfn) or  not os.path.exists(chunkfn):
             print("can't find files.")
