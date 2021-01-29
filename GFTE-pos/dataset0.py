@@ -28,7 +28,7 @@ class ScitsrDataset(Dataset):
                 self.imglist = json.load(read_file)
         else:  
             self.imglist = list(filter(lambda fn:fn.lower().endswith('.jpg') or fn.lower().endswith('.png') ,
-                                       os.listdir(os.path.join(self.root_path,"img"))))
+                                       os.listdir(os.path.join(self.root_path,"/content/scitsr_data/train/img"))))
             self.imglist = self.check_all()
             with open(self.jsonfile, "w") as write_file:
                 json.dump(self.imglist, write_file)
