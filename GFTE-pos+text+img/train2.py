@@ -61,7 +61,7 @@ root_path = ''
 train_dataset = ScitsrDataset(root_path)
 root_path = ''
 test_dataset = ScitsrDataset(root_path)
-root_path = '/home/deepvision/lyr/out'
+root_path = ''#/home/deepvision/lyr/out
 eval_dataset = ScitsrDataset(root_path)
 print("samples:",len(train_dataset),len(eval_dataset)) ,len(test_dataset)
 train_loader = DataLoader(train_dataset, batch_size=32, shuffle=True)
